@@ -356,7 +356,7 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Few-shot learning with pre-trained models")
-    parser.add_argument("--dataset", type=str, default="cifar10", choices=["cifar100", "flowers102", "Caltech101", "cifar10", "Food101"],
+    parser.add_argument("--dataset", type=str, default="cifar100", choices=["cifar100", "flowers102", "Caltech101", "cifar10", "Food101"],
                         help="Dataset to use (currently only cifar100 is supported)")
     parser.add_argument("--k_shot", type=int, default=2,
                         help="Number of samples per class for few-shot learning")
